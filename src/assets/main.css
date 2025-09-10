@@ -1,0 +1,84 @@
+:root {
+  --marrom: #8B5E3C;
+  --bege: #F2E2D2;
+  --bege-claro: #FFF6ED;
+  --marrom-escuro: #5C3B29;
+  --cinza: #444444;
+  --cinza-claro: #EFEFEF;
+  --branco: #FFFFFF;
+
+  --font-family-padrao: 'Nunito Sans', sans-serif;
+  --cabecalhos: 'Paytone One', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--bege);
+  font-family: var(--font-family-padrao);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--marrom-escuro);
+}
+
+
+/* Tipografia */
+.cabecalho-lg {
+  font-family: var(--cabecalhos);
+  font-size: 3.35625em;
+  line-height: 120%;
+}
+
+.cabecalho {
+  font-family: var(--cabecalhos);
+  font-size: 2.75em;
+  line-height: 120%;
+}
+
+.subtitulo-lg {
+  font-size: 1.9375em;
+  line-height: 150%;
+}
+
+.paragrafo-lg {
+  font-size: 1.375em;
+  line-height: 150%;
+}
+
+.paragrafo {
+  font-size: 1.125em;
+  line-height: 150%;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 767px) {
+  .cabecalho-lg {
+    font-size: 2.75em;
+  }
+
+  .cabecalho {
+    font-size: 2.3125em;
+  }
+
+  .subtitulo-lg {
+    font-size: 1.625em;
+  }
+}
